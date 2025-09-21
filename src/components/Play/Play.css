@@ -1,0 +1,64 @@
+.play{
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    .triangle{
+        position: absolute;
+        align-self: center;
+        margin-top: 70px;
+        
+    }
+    .items{
+        display: flex;
+        justify-content: center;
+        
+
+        .icon{
+            height: 160px;
+            width: 160px;
+            border: 1rem solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+              background-color: white;
+              transition: transform .3s;
+            
+        }
+         .iconR{
+            border-color: rgb(46, 46, 233);
+            transform: translateX(1.5rem);
+            box-shadow: inset 0px 5px 4px gray, 0px 6px rgba(6, 6, 157, 0.6);
+            
+        }
+         .iconS{
+            border-color: purple;
+            transform: translateX(8.5rem);
+            box-shadow: inset 0px 5px 4px gray, 0px 6px rgba(128, 0, 128, 0.6);
+         }
+        .iconP{
+            border-color: yellow;
+            transform: translateX(-10rem) translateY(15rem);
+            box-shadow: inset 0px 5px 4px gray, 0px 6px rgba(255, 215, 0, 0.6);
+
+            
+          
+        }
+        
+        .iconR:hover{
+            transform: translateX(1.5rem) scale(1.1);
+        }
+          .iconS:hover{
+          transform: translateX(8.5rem) scale(1.1);
+        }
+          .iconP:hover{
+             transform: translateX(-10rem) translateY(15rem) scale(1.1);
+        }
+       
+       
+      
+    }
+}

@@ -1,0 +1,190 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 4px solid white;
+    max-width: 62.5rem;
+    width: 100%;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.header .text {
+    font-size: 3rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+.score-boxes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-box {
+    padding: 1.25rem 1.9rem;
+    background-color: white;
+    color: #000;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.score {
+    font-size: 40px;
+    font-weight: bold;
+ background-color:white
+
+}
+
+.score-text {
+    font-size: 25px;
+    background-color:white ;
+}
+
+/* Tablet responsiveness - 768px and below */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.25rem;
+        margin-top: 0.5rem;
+    }
+
+    .header .text {
+        font-size: 2.5rem;
+        text-align: center;
+        align-items: center;
+        line-height: 2.5rem;
+        
+    }
+
+    .score-boxes {
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .score-box {
+        padding: 1rem 1.5rem;
+        min-width: 100px;
+        flex: 1;
+        max-width: 150px;
+    }
+
+    .score {
+        font-size: 35px;
+    }
+
+    .score-text {
+        font-size: 20px;
+    }
+}
+
+/* Mobile responsiveness - 480px and below */
+@media (max-width: 480px) {
+    .header {
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border-width: 3px;
+        gap: 1rem;
+    }
+
+    .header .text {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .score-boxes {
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    .score-box {
+        padding: 0.75rem 1.25rem;
+        gap: 5px;
+        min-width: 90px;
+        max-width: 130px;
+    }
+
+    .score {
+        font-size: 28px;
+    }
+
+    .score-text {
+        font-size: 16px;
+    }
+}
+
+/* Extra small screens - 320px and below */
+@media (max-width: 320px) {
+    .header {
+        padding: 0.75rem;
+        border-radius: 0.75rem;
+    }
+
+    .header .text {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .score-box {
+        padding: 0.5rem 1rem;
+        min-width: 80px;
+        max-width: 110px;
+    }
+
+    .score {
+        font-size: 24px;
+    }
+
+    .score-text {
+        font-size: 14px;
+    }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-width: 768px) and (orientation: landscape) {
+    .header {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .header .text {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .score-boxes {
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .score-box {
+        padding: 0.5rem 1rem;
+        min-width: 80px;
+        max-width: 120px;
+    }
+
+    .score {
+        font-size: 24px;
+    }
+
+    .score-text {
+        font-size: 14px;
+    }
+}
