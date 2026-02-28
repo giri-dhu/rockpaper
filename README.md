@@ -32,3 +32,4 @@ Play against the computer, track scores, and enjoy a simple yet engaging UI.
 1. Clone the repository
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
+now i am adding this sentence and i will commit
